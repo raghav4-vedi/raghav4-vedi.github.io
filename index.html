@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raghav Chaturvedi | AI for Non-Hermitian Physics</title>
+  <meta name="description" content="Research portfolio of Raghav Chaturvedi: AI-assisted studies of non-Hermitian topology, Hatano-Nelson models, real-space winding invariants, and quantum transport." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --accent2: #a78bfa;
+      --border: rgba(255,255,255,0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.22), transparent 34%),
+                  radial-gradient(circle at top right, rgba(167,139,250,0.18), transparent 36%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1050px; margin: 0 auto; padding: 36px 22px 64px; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      margin-bottom: 80px;
+    }
+    .brand { font-weight: 700; letter-spacing: 0.02em; }
+    .links { display: flex; gap: 18px; flex-wrap: wrap; color: var(--muted); }
+    .hero { display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 32px; align-items: center; }
+    h1 { font-size: clamp(2.4rem, 5vw, 4.8rem); line-height: 1.04; margin: 0 0 22px; }
+    h2 { font-size: 1.55rem; margin: 0 0 16px; }
+    h3 { margin: 0 0 8px; }
+    .lead { font-size: 1.15rem; color: #cbd5e1; max-width: 720px; }
+    .tagline { color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.8rem; }
+    .card {
+      background: rgba(17,24,39,0.72);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.28);
+      backdrop-filter: blur(12px);
+    }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 1px solid var(--border); border-radius: 999px;
+      padding: 10px 16px; color: var(--text); background: rgba(255,255,255,0.06);
+    }
+    .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #08111f; font-weight: 700; }
+    section { margin-top: 56px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .project { min-height: 220px; }
+    .muted { color: var(--muted); }
+    .pillrow { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+    .pill { font-size: 0.78rem; color: #dbeafe; border: 1px solid var(--border); border-radius: 999px; padding: 4px 9px; background: rgba(255,255,255,0.04); }
+    .timeline { display: grid; gap: 14px; }
+    .item { border-left: 2px solid var(--accent); padding-left: 18px; }
+    footer { margin-top: 70px; color: var(--muted); border-top: 1px solid var(--border); padding-top: 24px; }
+    @media (max-width: 820px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      nav { align-items: flex-start; flex-direction: column; margin-bottom: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand">Raghav Chaturvedi</div>
+      <div class="links">
+        <a href="#projects">Projects</a>
+        <a href="#papers">Papers</a>
+        <a href="#code">Code</a>
+        <a href="mailto:your.email@example.com">Contact</a>
+      </div>
+    </nav>
+
+    <main class="hero">
+      <div>
+        <div class="tagline">AI for theoretical physics</div>
+        <h1>Non-Hermitian topology, real-space invariants, and machine learning.</h1>
+        <p class="lead">
+          I am a theoretical condensed-matter physicist working on non-Hermitian physics,
+          quantum transport, and AI-assisted discovery of scaling laws in finite-size topological systems.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+          <a class="btn" href="assets/Raghav_Chaturvedi_CV.pdf">CV</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Current focus</h2>
+        <p class="muted">
+          Building interpretable ML workflows to predict the minimal safe crop length needed for real-space
+          topological invariants in Hatano-Nelson-type chains.
+        </p>
+        <div class="pillrow">
+          <span class="pill">Hatano-Nelson</span>
+          <span class="pill">Winding invariants</span>
+          <span class="pill">Finite-size scaling</span>
+          <span class="pill">Random forests</span>
+          <span class="pill">Python</span>
+        </div>
+      </div>
+    </main>
+
+    <section id="projects">
+      <h2>Selected projects</h2>
+      <div class="grid">
+        <article class="card project">
+          <h3>AI-assisted scaling of real-space invariants</h3>
+          <p class="muted">
+            Predicting the minimal crop length l* for reliable convergence of polar-decomposition winding invariants in finite non-Hermitian chains.
+          </p>
+          <div class="pillrow"><span class="pill">ML</span><span class="pill">Scaling</span><span class="pill">Topology</span></div>
+        </article>
+        <article class="card project">
+          <h3>Higher-neighbor Hatano-Nelson models</h3>
+          <p class="muted">
+            Extending the clean asymmetric-hopping problem from nearest-neighbor to m-th-neighbor chains to test universal scaling variables and finite-size oscillations.
+          </p>
+          <div class="pillrow"><span class="pill">1D models</span><span class="pill">Non-Hermitian</span><span class="pill">Python</span></div>
+        </article>
+        <article class="card project">
+          <h3>HgTe nonlocal transport</h3>
+          <p class="muted">
+            Kwant simulations of H-bar devices, nonlocal resistance, spin Hall response, and probe-dependent mesoscopic transport signatures.
+          </p>
+          <div class="pillrow"><span class="pill">Kwant</span><span class="pill">HgTe</span><span class="pill">Transport</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="papers">
+      <h2>Papers and manuscripts</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Critical exponent for the Hatano-Nelson chain using a real-space topological invariant</h3>
+          <p class="muted">
+            Manuscript on using a real-space polar-decomposition winding invariant as a scaling variable for non-Hermitian phase transitions.
+          </p>
+        </div>
+        <div class="item">
+          <h3>Non-Hermitian topology of quantum spin Hall systems</h3>
+          <p class="muted">
+            Work on conductance-matrix non-Hermiticity and edge-state polarization in multiterminal QSH devices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="code">
+      <h2>Code and tools</h2>
+      <div class="card">
+        <p class="muted">
+          Repositories will be added here as the project is cleaned and documented. Suggested sections:
+          data generation, invariant computation, ML regression/classification, plotting notebooks, and reproducibility scripts.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="https://github.com/YOUR_GITHUB_USERNAME/AI_Physics_Project">AI Physics Project repo</a>
+          <a class="btn" href="https://github.com/YOUR_GITHUB_USERNAME?tab=repositories">All repositories</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Raghav Chaturvedi. Built with GitHub Pages.</p>
+    </footer>
+  </div>
+</body>
+</html>
