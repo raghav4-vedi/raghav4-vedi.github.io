@@ -4,13 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>Raghav Chaturvedi | Data Scientist | Machine Learning | Physics</title>
-  <meta name="description" content="Raghav Chaturvedi is a theoretical physicist working in data science, machine learning, and scientific computing. Portfolio, projects, and research." />
-  <meta name="keywords" content="Raghav Chaturvedi, data science, machine learning, physics, scientific computing, raghav4-vedi" />
+  <title>Raghav Chaturvedi | Data Science, ML & Scientific Computing</title>
+  <meta name="description" content="Raghav Chaturvedi: theoretical physicist working in data science, machine learning, and scientific computing. Joint first author Nature Physics." />
   <meta name="author" content="Raghav Chaturvedi" />
 
-  <!-- Structured Data -->
+  <!-- SEO STRUCTURED DATA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,196 +28,252 @@
   <style>
     body {
       margin: 0;
-      font-family: Inter, sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #ffffff;
+      color: #222;
+      line-height: 1.65;
     }
 
-    .wrap {
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
-    }
+    a { color: #2a6ebb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-    nav {
+    header {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 25px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 40px;
     }
 
-    a {
-      text-decoration: none;
-      color: #2563eb;
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 50px;
+    }
+
+    aside {
+      position: sticky;
+      top: 70px;
+    }
+
+    .photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .name {
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    .muted {
+      color: #666;
+      font-size: 0.95rem;
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       margin-bottom: 10px;
     }
 
     h2 {
       margin-top: 40px;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .photo {
-      width: 100%;
-      border-radius: 12px;
-    }
-
-    .buttons {
-      margin-top: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-right: 10px;
-      padding: 10px 14px;
-      border: 1px solid #ccc;
-      border-radius: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
     }
 
     .card {
       border: 1px solid #ddd;
       padding: 15px;
-      border-radius: 12px;
       margin-top: 15px;
+      border-radius: 8px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+    .highlight {
+      border-left: 4px solid #2a6ebb;
+      background: #f3f7fc;
+      padding: 12px;
+      margin: 20px 0;
+    }
+
+    .tags span {
+      display: inline-block;
+      border: 1px solid #ddd;
+      padding: 3px 8px;
+      margin: 4px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    .buttons a {
+      margin-right: 10px;
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      border-radius: 5px;
     }
 
     @media(max-width:800px){
-      .hero, .grid {
+      .container {
         grid-template-columns: 1fr;
       }
+      aside { position: static; }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
 
-    <nav>
-      <div><strong>Raghav Chaturvedi</strong></div>
-      <div>
-        <a href="#projects">Projects</a> |
-        <a href="#code">Code</a> |
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-
-    <section class="hero">
-      <div>
-        <h1>Raghav Chaturvedi</h1>
-        <p><strong>Data-driven physicist | Machine learning | Scientific computing</strong></p>
-
-        <p>
-          I build models, simulations, and machine learning pipelines to analyze complex systems.
-          My work combines physics, data analysis, and computation to extract meaningful insights.
-        </p>
-
-        <div class="buttons">
-          <a class="btn" href="https://github.com/raghav4-vedi/" target="_blank">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/raghav-chaturvedi97" target="_blank">LinkedIn</a>
-          <a class="btn" href="https://scholar.google.com/citations?user=CGO8meEAAAAJ&hl=en" target="_blank">Scholar</a>
-          <a class="btn" href="mailto:raghav.chaturvedi@uni-wuerzburg.de">Email</a>
-        </div>
-      </div>
-
-      <div>
-        <img src="assets/profile.jpg" class="photo" alt="Raghav Chaturvedi">
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="card">
-        Python, NumPy, SciPy, Pandas, Matplotlib<br>
-        Machine Learning (scikit-learn, regression, classification)<br>
-        Scientific computing, simulations (Kwant)<br>
-        Data analysis & visualization
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="grid">
-
-        <div class="card">
-          <h3>ML for scaling prediction</h3>
-          <p>
-            Built ML models to predict convergence behavior in complex systems using simulation data and feature engineering.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Hatano-Nelson models</h3>
-          <p>
-            Developed numerical studies of scaling and phase transitions using large parameter sweeps and data analysis.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Quantum transport simulations</h3>
-          <p>
-            Built simulation pipelines for multi-terminal transport systems and analyzed resulting datasets.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="code">
-      <h2>Code</h2>
-
-      <div class="card">
-        <p>GitHub repositories and projects:</p>
-        <a href="https://github.com/raghav4-vedi/" target="_blank">View GitHub profile</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Publications</h2>
-
-      <div class="card">
-        Non-Hermitian topology of quantum spin Hall systems
-      </div>
-
-      <div class="card">
-        Machine learning and scaling in non-Hermitian models (ongoing)
-      </div>
-
-      <br>
-      <a href="https://scholar.google.com/citations?user=CGO8meEAAAAJ&hl=en" target="_blank">View all on Google Scholar</a>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <div class="card">
-        <p>Email: raghav.chaturvedi@uni-wuerzburg.de</p>
-        <p>
-          <a href="https://www.linkedin.com/in/raghav-chaturvedi97">LinkedIn</a> |
-          <a href="https://github.com/raghav4-vedi/">GitHub</a>
-        </p>
-      </div>
-    </section>
-
-    <footer>
-      <p>© 2026 Raghav Chaturvedi</p>
-    </footer>
-
+<header>
+  <strong>Raghav Chaturvedi</strong>
+  <div>
+    <a href="#projects">Projects</a> |
+    <a href="#code">Code</a> |
+    <a href="#contact">Contact</a>
   </div>
+</header>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside>
+    <img src="assets/profile.jpg" class="photo" alt="Raghav">
+
+    <div class="name">Raghav Chaturvedi</div>
+    <div class="muted">Physicist → Data & ML</div>
+
+    <br>
+
+    <div class="muted">
+      📍 Germany<br>
+      ✉️ <a href="mailto:raghav.chaturvedi@uni-wuerzburg.de">Email</a><br>
+      💼 <a href="https://www.linkedin.com/in/raghav-chaturvedi97">LinkedIn</a><br>
+      💻 <a href="https://github.com/raghav4-vedi/">GitHub</a><br>
+      🎓 <a href="https://scholar.google.com/citations?user=CGO8meEAAAAJ&hl=en">Scholar</a>
+    </div>
+
+    <br>
+
+    <div class="muted">
+      <strong>Open to:</strong><br>
+      Data Science<br>
+      Machine Learning<br>
+      Quant / Tech roles<br>
+      Scientific Computing
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main>
+
+    <h1>Raghav Chaturvedi</h1>
+
+    <p>
+      I am a theoretical condensed-matter physicist working at the intersection of
+      <strong>data analysis, machine learning, and scientific computing</strong>.
+    </p>
+
+    <p>
+      My work focuses on building computational models, generating large simulation datasets,
+      and extracting interpretable patterns using statistical and ML techniques.
+    </p>
+
+    <!-- HIGHLIGHT -->
+    <div class="highlight">
+      <strong>Research highlight:</strong><br>
+      Joint first author of a <em>Nature Physics</em> paper on non-Hermitian topology in multiterminal quantum systems.
+    </div>
+
+    <div class="buttons">
+      <a href="https://github.com/raghav4-vedi/">GitHub</a>
+      <a href="https://www.linkedin.com/in/raghav-chaturvedi97">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=CGO8meEAAAAJ&hl=en">Scholar</a>
+    </div>
+
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+
+    <div class="tags">
+      <span>Python</span>
+      <span>NumPy</span>
+      <span>Pandas</span>
+      <span>scikit-learn</span>
+      <span>Machine Learning</span>
+      <span>Data Analysis</span>
+      <span>Scientific Computing</span>
+      <span>Kwant</span>
+    </div>
+
+    <!-- PROJECTS -->
+    <h2 id="projects">Projects</h2>
+
+    <div class="card">
+      <strong>ML for scaling prediction</strong>
+      <p>
+        Built ML models to predict convergence behavior in complex systems using
+        simulation datasets and feature engineering.
+      </p>
+    </div>
+
+    <div class="card">
+      <strong>Hatano-Nelson models</strong>
+      <p>
+        Studied scaling laws and phase behavior using large numerical datasets.
+      </p>
+    </div>
+
+    <div class="card">
+      <strong>Quantum transport simulations</strong>
+      <p>
+        Built numerical pipelines for multi-terminal quantum systems and analyzed transport data.
+      </p>
+    </div>
+
+    <!-- CODE -->
+    <h2 id="code">Code</h2>
+
+    <div class="card">
+      <a href="https://github.com/raghav4-vedi/">View GitHub</a>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <h2>Publications</h2>
+
+    <div class="card">
+      Non-Hermitian topology of quantum spin Hall systems
+    </div>
+
+    <div class="card">
+      Machine learning and scaling in non-Hermitian systems (ongoing)
+    </div>
+
+    <!-- EXTRA -->
+    <h2>Additional</h2>
+
+    <div class="card">
+      German: telc B1 certified, currently studying B2<br>
+      Training in AI/ML and high-performance computing
+    </div>
+
+    <!-- CONTACT -->
+    <h2 id="contact">Contact</h2>
+
+    <p>
+      Open to opportunities in data science, ML, quant, and tech roles.
+    </p>
+
+    <p>
+      Email: <a href="mailto:raghav.chaturvedi@uni-wuerzburg.de">
+      raghav.chaturvedi@uni-wuerzburg.de</a>
+    </p>
+
+  </main>
+
+</div>
+
 </body>
 </html>
